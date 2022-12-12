@@ -604,9 +604,9 @@ span {
 .program__text-btn {
   text-align: center;
   background-color: #2a2929;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#2a2929), color-stop(45%, #ffffff), to(#2a2929));
-  background-image: -o-linear-gradient(top, #2a2929 0%, #ffffff 45%, #2a2929 100%);
-  background-image: linear-gradient(to bottom, #2a2929 0%, #ffffff 45%, #2a2929 100%);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#2a2929), color-stop(10%, #ffffff), to(#2a2929));
+  background-image: -o-linear-gradient(top, #2a2929 0%, #ffffff 10%, #2a2929 100%);
+  background-image: linear-gradient(to bottom, #2a2929 0%, #ffffff 10%, #2a2929 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   opacity: 0.95;
@@ -1669,6 +1669,10 @@ span {
     max-width: none;
   }
 
+  .logo img {
+    max-width: 80%;
+  }
+
   .reviews {
     height: 100%;
   }
@@ -1922,12 +1926,13 @@ span {
     background-color: #9554eb;
     padding: 14px 10px;
     border-radius: 10px;
+    border: 2px solid #fff;
   }
 
   .time-count__separator {
-    margin: 0px 0px 0px 0px;
+    margin: 0px 2px 0px 0.5px;
     font-size: 30px;
-    line-height: 60px;
+    line-height: 64px;
   }
 
   .time-count__text {
@@ -1996,6 +2001,14 @@ span {
   .submit-btn {
     font-size: 22px;
     padding: 15px 35px;
+  }
+
+  .logo {
+    margin-bottom: 20px;
+  }
+
+  .logo img {
+    max-width: 60%;
   }
 
   .program {
@@ -2203,6 +2216,14 @@ span {
 }
 
 @media (max-width: 500px) {
+  .logo {
+    margin-bottom: 0;
+  }
+
+  .logo img {
+    max-width: 40%;
+  }
+
   .reviews__clients {
     max-width: 380px;
     margin-bottom: 140px;
